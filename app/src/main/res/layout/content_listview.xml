@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.example.l.projectbysr.view.PullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pull_refresh_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_content_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:dividerHeight="10dip"
+            android:divider="@color/bg_light_gray"
+            android:scrollbars="none" />
+    </com.example.l.projectbysr.view.PullToRefreshView>

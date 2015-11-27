@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:paddingLeft="13dip"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#99CCFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="10dip"
+        >
+
+        <TextView
+            android:id="@+id/tv_bg_color"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:background="@drawable/red_ring"
+            android:gravity="center"
+            android:text="林"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/tv_bg_color"
+            android:text="林德鹏" />
+    </RelativeLayout>
+</LinearLayout>

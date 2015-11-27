@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip">
+
+        <com.example.l.projectbysr.view.ChangeColorIconWithTextView
+            android:id="@+id/tv_tab1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            zhy:m_start_bg_color="@android:color/white"
+            zhy:m_end_bg_color="@color/orange"
+            zhy:m_start_text_color="@color/light_gray"
+            zhy:m_end_text_color="@android:color/white"
+            zhy:text="全部" />
+
+        <com.example.l.projectbysr.view.ChangeColorIconWithTextView
+            android:id="@+id/tv_tab2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            zhy:text="待结算"
+            zhy:m_start_bg_color="@android:color/white"
+            zhy:m_end_bg_color="@color/orange"
+            zhy:m_start_text_color="@color/light_gray"
+            zhy:m_end_text_color="@android:color/white"
+             />
+
+        <com.example.l.projectbysr.view.ChangeColorIconWithTextView
+            android:id="@+id/tv_tab3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            zhy:text="已结算"
+            zhy:m_start_bg_color="@android:color/white"
+            zhy:m_end_bg_color="@color/orange"
+            zhy:m_start_text_color="@color/light_gray"
+            zhy:m_end_text_color="@android:color/white"
+       />
+
+        <com.example.l.projectbysr.view.ChangeColorIconWithTextView
+            android:id="@+id/tv_tab4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="10dip"
+            zhy:text="退保"
+            zhy:m_start_bg_color="@android:color/white"
+            zhy:m_end_bg_color="@color/orange"
+            zhy:m_start_text_color="@color/light_gray"
+            zhy:m_end_text_color="@android:color/white"
+            />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
